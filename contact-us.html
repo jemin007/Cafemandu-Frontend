@@ -132,13 +132,13 @@
                     <form action="#">
                         <div class="left">
                             
-                            <input type="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" required>
+                            <input type="email" name="contactEmail" id="contactEmail" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" required>
                             
                         </div>
                         <div class="right">
-                            <textarea name="message" cols="20" rows="7"  placeholder="Enter Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" required></textarea>
+                            <textarea name="message" name="contactText" id="contactText" cols="20" rows="7"  placeholder="Enter Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" required></textarea>
                         </div>
-                        <button type="submit" class="template-btn">subscribe now</button>
+                        <button type="submit" class="template-btn" id="contactBtn">subscribe now</button>
                     </form>
                 </div>
             </div>
