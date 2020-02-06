@@ -77,25 +77,31 @@
                         <h2 class=" title_color" style="margin:auto;">Sign Up</h2>
                         <form action="#">
                             <div class="mt-10">
-                                <input type="text" name="first_name" placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required class="single-input">
+                                <input type="text" name="signName" id="signName" placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required class="single-input">
                             </div>
                     
                             <div class="mt-10">
-                                <input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required class="single-input">
+                                <input type="email" name="signEmail" id="signEmail" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required class="single-input">
                             </div>
                             <div class="mt-10">
-                                <input type="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required class="single-input">
+                                <input type="password" name="signPassword" id="signPassword" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required class="single-input">
                             </div>
                             <div class="input-group-icon mt-10">
                                 <div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-                                <input type="text" name="address" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required class="single-input">
+                                <input type="text" name="signAddress" id="signAddress" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required class="single-input">
                             </div>
                             <div class="mt-10">
-                                <input type="number" name="Phone" placeholder="Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Number'" required class="single-input">
+                                <input type="number" name="signPhone" id="signPhone" placeholder="Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Number'" required class="single-input">
                             </div>
+
+                            <div class="select-image col-lg-7 mb-3">
+                                        <div class="position-relative form-group"><label for="exampleFile" class="">File</label><input name="signImage" id="signImage" type="file" class="form-control-file">
+                                                        
+                                        </div>
+                                    </div>
                         </form>
 
-                        <a href="#" class="genric-btn info-border circle arrow mt-10 ml-10">Sign Up<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="#" class="genric-btn info-border circle arrow mt-10 ml-10" id="signBtn">Sign Up<span class="lnr lnr-arrow-right"></span></a>
                 </div>
                 <div class="col-lg-3">
                     
