@@ -13,7 +13,7 @@ window.onload = function () {
 
 		// console.log(fullName, email, telephone, address, gender, password);
 
-		const data = await fetch({
+		const data = await fetch(url,{
 			method: "POST",
 			headers:{
 				'Content-Type': 'application/json'
@@ -22,7 +22,6 @@ window.onload = function () {
 				image: "",
 				fullName: fullName,
 				email: email,
-				telephone: telephone,
 				address: address,
 				phone: phone,
 				password: password
@@ -30,10 +29,10 @@ window.onload = function () {
 		})
 		const json = await data.json();
 		console.log(json);
-		if(json.isSuccess == true){
-			alert(json.message);
+		if(json.status == "Signup success!"){
+			alert("Signup Succesfull!");
 		}else{
-			alert(json.message);
+			alert("Sign up failed!");
 		}
 	}
 }
