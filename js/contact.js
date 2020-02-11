@@ -20,7 +20,8 @@ window.onload = function () {
 		})
 		const json = await data.json();
 		console.log(json);
-		if(json.status == "success"){
+		if(json.status == "Succesfully added"){
+			console.log("here");
 			alert("Contact has been added!");
 		}else{
 			alert("Failed to post your contact!");

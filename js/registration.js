@@ -10,6 +10,7 @@ window.onload = function () {
 		const address = document.getElementById('signAddress').value;
 		const phone = document.getElementById('signPhone').value;
 		const password = document.getElementById('signPassword').value;
+		const image = document.getElementById('signImage').value;
 
 		// console.log(fullName, email, telephone, address, gender, password);
 
